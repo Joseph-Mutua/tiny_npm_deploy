@@ -5,12 +5,14 @@
   "publishConfig": {
     "access": "public"
   },
+  "bin": "dist/index.js",
   "files": [
     "dist"
   ],
   "main": "index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [],
   "author": "",
